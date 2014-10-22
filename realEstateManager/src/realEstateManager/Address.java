@@ -34,7 +34,7 @@ public class Address {
 	 * @param sc {@link java.util.Scanner} with the active line being the first line of the address
 	 * @return Address with the properties read from the <em>Scanner</em>
 	 */
-	public Address read(Scanner sc) {
+	public static Address read(Scanner sc) {
 		String straat, huisnummer, postcode, plaats, inputstr, str1 = null, str2 = null;
 		int lastspace = 0;
 		

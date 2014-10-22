@@ -30,12 +30,11 @@ public class Residence {
 	 * @param sc Scanner to read the Residence from. Active line must be the first line of the Residence
 	 * @return Residence that was created using the values received from the Scanner.
 	 */
-	public Residence read(Scanner sc) {
+	public static Residence read(Scanner sc) {
 		int rooms = 0, askingPrice = 0;
 		String inputstr;
-		Address nullAdr = new Address(null,null,null,null);
-		
-		Address adr = nullAdr.read(sc);
+	
+		Address adr = Address.read(sc);
 		
 		inputstr = sc.nextLine();
 		for(int i = 0; i < inputstr.length(); i++)
@@ -83,7 +82,7 @@ public class Residence {
 	 * @param price Price to check against
 	 * @return true if the price of the Residence is less than your price<br>false otherwise.
 	 */
-	public boolean kostHooguit(int price) {
+	public boolean maxCost(int price) {
 		if(this.askingPrice <= price)
 			return true;
 		return false;

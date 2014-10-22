@@ -3,9 +3,8 @@ package realEstateManager;
 import java.util.Scanner;
 
 /**
- * A residence with an address, information about the number of rooms it has and the price for this Woning.
+ * A residence with an address, information about the number of rooms it has and the price for this Residence.
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
- * @version 1.0
  */
 public class Residence {
 	
@@ -14,11 +13,10 @@ public class Residence {
 	private Address address;
 	
 	/**
-	 * Create a Woning object with an address, information about the number of rooms and the price for this Woning. 
-	 * @param adres Address of this Woning
-	 * @param kamers Number of rooms in this Woning
-	 * @param vraagPrijs The price for which this Woning sells
-	 * @since 1.0
+	 * Create a Residence object with an address, information about the number of rooms and the price for this Residence. 
+	 * @param address Address of this Residence
+	 * @param rooms Number of rooms in this Residence
+	 * @param askingPrice The price for which this Residence sells
 	 */
 	public Residence(Address address, int rooms, int askingPrice) {
 		this.address = address;
@@ -28,9 +26,9 @@ public class Residence {
 	}
 	
 	/**
-	 * Read a 4 line Woning from a scanner with the format "[Adres(2 lines)]\n[kamerAmount] kamers\nprijs [vraagPrijs]"
-	 * @param sc Scanner to read the Woning from. Active line must be the first line of the Woning
-	 * @return Woning that was created using the values received from the Scanner.
+	 * Read a 4 line Residence from a scanner with the format "[address(2 lines)][\n][rooms] rooms[\n]price [askingPrice]"
+	 * @param sc Scanner to read the Residence from. Active line must be the first line of the Residence
+	 * @return Residence that was created using the values received from the Scanner.
 	 */
 	public Residence read(Scanner sc) {
 		int rooms = 0, askingPrice = 0;
@@ -67,7 +65,7 @@ public class Residence {
 	}
 	
 	/**
-	 * Test if obj is a Woning and contains the same values as this instance.
+	 * Test if obj is a Residence and contains the same values as this instance.
 	 */
 	public boolean equals(Object obj) {
 		if(obj instanceof Residence) {
@@ -81,10 +79,9 @@ public class Residence {
 	}
 	
 	/**
-	 * Checks if the price of this Woning is less than a price you are willing to pay
-	 * @param prijs Price to check against
-	 * @return true if the price of the Woning is less than your price<br>false otherwise.
-	 * @since 1.0
+	 * Checks if the price of this Residence is less than a price you are willing to pay
+	 * @param price Price to check against
+	 * @return true if the price of the Residence is less than your price<br>false otherwise.
 	 */
 	public boolean kostHooguit(int price) {
 		if(this.askingPrice <= price)

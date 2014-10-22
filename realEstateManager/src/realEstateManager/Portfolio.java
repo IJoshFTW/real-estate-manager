@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 /**
- * 
+ * Collection of {@link Residence}s
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  */
 public class Portfolio {
@@ -15,10 +15,10 @@ public class Portfolio {
 	public Portfolio() {}
 	
 	/**
-	 * Read a number of Woning Objects from a file and add them to a Portefeuille Object.
+	 * Read a number of {@link Residence} Objects from a file and add them to a {@link Portfolio} Object.
 	 * 
 	 * @param filename File to read from
-	 * @return Portefeuille Object with all Woning Objects found in the file
+	 * @return <b>Portfolio</b> Object with all <b>Residence</b> Objects found in the file
 	 */
 	public static Portfolio read(String filename) {
 		Portfolio port = new Portfolio();
@@ -39,17 +39,17 @@ public class Portfolio {
 	}
 	
 	/**
-	 * Add a {@link Residence} to this collection of Residence Objects.
-	 * @param won Woning to add
+	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects.
+	 * @param rsd <b>Residence</b> to add
 	 */
 	public void addResidence(Residence rsd) {
 		residences.add(rsd);
 	}
 	
 	/**
-	 * Used to get the Woning Objects which prices are below a certain amount
-	 * @param prijs Price to check against
-	 * @return ArrayList with Woning Objects with all Woning Objects in this Portefeuille with a price less than prijs
+	 * Used to get the {@link Residence} Objects which prices are below a certain amount
+	 * @param price Price to check against
+	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
 	 */
 	public ArrayList<Residence> residencesUpto(int price) throws NegativeException {
 		ArrayList<Residence> residences = new ArrayList<Residence>();
@@ -69,8 +69,8 @@ public class Portfolio {
 	}
 	
 	/**
-	 * 
-	 * @return All Woning Objects in this object.
+	 * Getter
+	 * @return All {@link Residence} Objects in this object.
 	 */
 	public ArrayList<Residence> getAllResidences() {
 		return this.residences;

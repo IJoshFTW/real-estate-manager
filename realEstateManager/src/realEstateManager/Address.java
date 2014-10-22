@@ -3,7 +3,7 @@ package realEstateManager;
 import java.util.Scanner;
 
 /**
- * An address object with a street, house number, postal code and place.
+ * An address with a street, house number, postal code and place.
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */

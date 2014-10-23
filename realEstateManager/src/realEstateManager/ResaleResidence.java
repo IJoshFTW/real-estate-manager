@@ -6,7 +6,7 @@ import java.util.Scanner;
  * A variant of {@link Residence}. This variant is for resale residences, which also have an energy level.
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  */
-public class ResaleResidence extends Residence {
+public class ResaleResidence extends Residence implements EnergyLevelResidence {
 	
 	private String energyLevel;
 	
@@ -32,7 +32,7 @@ public class ResaleResidence extends Residence {
 	 * Returns a string representation of this instance.
 	 */
 	public String toString() {
-		return "<" + this.getClass().getSimpleName() + "[" + super.getAddress().toString() + "," + super.getRooms() + "," + super.getAskingPrice() + "," + energyLevel + "]>";
+		return "<" + this.getClass().getSimpleName() + "[" + super.getAddress().toString() + "," + super.getRooms() + "," + super.getAskingPrice() + "," + super.getResidenceType() + " " + super.getStatus() + "," + energyLevel + "]>";
 	}
 	
 	public String getEnergyLevel() {

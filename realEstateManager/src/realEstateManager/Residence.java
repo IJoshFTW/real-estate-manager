@@ -24,6 +24,7 @@ public class Residence {
 		this.address = address;
 		this.rooms = rooms;
 		this.askingPrice = askingPrice;
+		this.status = 1;
 	}
 	
 	/**
@@ -34,6 +35,7 @@ public class Residence {
 	public static Residence read(Scanner sc) {
 		int rooms = 0, askingPrice = 0, type, status;
 		String inputstr;
+		String[] strarray;
 		
 		inputstr = sc.nextLine();								// Read and process the first line, which indicates the residence type and status
 		switch (inputstr) {
@@ -64,12 +66,8 @@ public class Residence {
 		rooms = Integer.parseInt(inputstr);
 		
 		inputstr = sc.nextLine();								// Read and process the price
-		for(int i = 0; i < inputstr.length(); i++)
-			if(inputstr.charAt(i) == ' ') {
-				inputstr = inputstr.substring(i + 1, inputstr.length());
-				break;
-			}
-		askingPrice = Integer.parseInt(inputstr);
+		strarray = inputstr.split(" ");
+		askingPrice = Integer.parseInt(strarray[strarray.length - 1]);
 		
 		Residence rsd = new Residence(adr, rooms, askingPrice);		// Depending on the residence type, construct the correct object
 		if(type == 1)
@@ -85,7 +83,41 @@ public class Residence {
 	 * Returns a string representation of this instance.
 	 */
 	public String toString() {
-		return "<" + this.getClass().getSimpleName() + "[" + address.toString() + "," + rooms + "," + askingPrice + "]>";
+		return "<" + this.getClass().getSimpleName() + "[" + address.toString() + "," + rooms + "," + askingPrice + "," + residenceType + " " + status + "]>";
+	}
+	
+	public void printPretty() {
+		// Write status
+		if(this.getResidenceType() == 1)
+			if(this.getStatus() == 1)
+				System.out.println("FOR SALE:");
+			else
+				System.out.println("SOLD:");
+		else
+			if(this.getStatus() == 1)
+				System.out.println("FOR RENT:");
+			else
+				System.out.println("RENTED:");
+		
+		// Write address
+		System.out.println(this.getAddress().getStreet() + " " + this.getAddress().getNumber());
+		System.out.println(this.getAddress().getPostalCode() + " " + this.getAddress().getPlace());
+		
+		// Write rooms
+		System.out.println(this.getRooms() + " rooms");
+		
+		// Write price with correct format and energy level if applicable
+		if(this.getResidenceType() == 1) {
+			if(this.getStatus() == 1)
+				System.out.println("asking price " + this.getAskingPrice());
+			else
+				System.out.println("final price " + this.getAskingPrice());
+			System.out.println("energy level " + ((ResaleResidence)this).getEnergyLevel());
+		} else {
+			System.out.println("rental price " + this.getAskingPrice());
+		}
+		
+		System.out.println();
 	}
 	
 	/**

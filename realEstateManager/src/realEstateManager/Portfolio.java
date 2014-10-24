@@ -111,6 +111,28 @@ public class Portfolio {
 	 * @param price Price to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
 	 */
+	public ArrayList<Residence> residencesUpto(int price) throws NegativeException {
+		ArrayList<Residence> residences = new ArrayList<Residence>();
+		if(price > 0) {
+			for(int i = 0; i < this.residences.size(); i++) {
+				if(this.residences.get(i).maxCost(price) == true)
+					residences.add(this.residences.get(i));
+			}
+		} else if(price == 0) {
+			for(int i = 0; i < this.residences.size(); i++) {
+				residences.add(this.residences.get(i));
+			}
+		} else {
+			throw new NegativeException("Nice try.");
+		}
+		return residences;
+	}
+	
+	/**
+	 * Used to get the {@link Residence} Objects which prices are below a certain amount and of a certain type
+	 * @param price Price to check against
+	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
+	 */
 	public ArrayList<Residence> residencesUpto(int price, int status) throws NegativeException {
 		ArrayList<Residence> residences = new ArrayList<Residence>();
 		if(price > 0) {

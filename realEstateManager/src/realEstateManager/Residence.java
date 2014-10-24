@@ -35,7 +35,7 @@ public class Residence {
 	public static Residence read(Scanner sc) {
 		int rooms = 0, askingPrice = 0, type, status;
 		String inputstr;
-		String[] strarray;
+		String[] strarr;
 		
 		inputstr = sc.nextLine();								// Read and process the first line, which indicates the residence type and status
 		switch (inputstr) {
@@ -58,16 +58,12 @@ public class Residence {
 		Address adr = Address.read(sc);							// Process the address
 		
 		inputstr = sc.nextLine();								// Read and process the number of rooms
-		for(int i = 0; i < inputstr.length(); i++)
-			if(inputstr.charAt(i) == ' ') {
-				inputstr = inputstr.substring(0, i);
-				break;
-			}
-		rooms = Integer.parseInt(inputstr);
+		strarr = inputstr.split(" ");
+		rooms = Integer.parseInt(strarr[0]);
 		
 		inputstr = sc.nextLine();								// Read and process the price
-		strarray = inputstr.split(" ");
-		askingPrice = Integer.parseInt(strarray[strarray.length - 1]);
+		strarr = inputstr.split(" ");
+		askingPrice = Integer.parseInt(strarr[strarr.length - 1]);
 		
 		Residence rsd = new Residence(adr, rooms, askingPrice);		// Depending on the residence type, construct the correct object
 		if(type == 1)

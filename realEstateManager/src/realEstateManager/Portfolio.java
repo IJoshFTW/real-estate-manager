@@ -47,7 +47,7 @@ public class Portfolio {
 	}
 	
 	/**
-	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects.
+	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects and save it to a file <b>filename</b>
 	 * @param rsd <b>Residence</b> to add
 	 */
 	public void addResidence(Residence rsd, String filename) {
@@ -103,7 +103,7 @@ public class Portfolio {
 	}
 	
 	/**
-	 * Used to get the {@link Residence} Objects which prices are below a certain amount
+	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount
 	 * @param price Price to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
 	 */
@@ -125,7 +125,7 @@ public class Portfolio {
 	}
 	
 	/**
-	 * Used to get the {@link Residence} Objects which prices are below a certain amount and of a certain type
+	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount and of a certain type
 	 * @param price Price to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
 	 */

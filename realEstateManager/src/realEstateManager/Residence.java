@@ -131,9 +131,9 @@ public class Residence {
 	}
 	
 	/**
-	 * Checks if the price of this Residence is less than a price you are willing to pay
+	 * Checks if the price of this {@link Residence} is less than or equal to a price
 	 * @param price Price to check against
-	 * @return true if the price of the Residence is less than your price<br>false otherwise.
+	 * @return true if the price of the <b>Residence</b> is less than your price<br>false otherwise.
 	 */
 	public boolean maxCost(int price) {
 		if(this.askingPrice <= price)
@@ -142,49 +142,56 @@ public class Residence {
 	}
 	
 	/**
-	 * @return The value of <em>rooms</em>
+	 * Getter
+	 * @return The value of <b>rooms</b>
 	 */
 	public int getRooms() {
 		return rooms;
 	}
 
 	/**
-	 * @return The value of <em>askingPrice</em>
+	 * Getter
+	 * @return The value of <b>askingPrice</b>
 	 */
 	public int getAskingPrice() {
 		return askingPrice;
 	}
 
 	/**
-	 * @return The value of <em>address</em>
+	 * Getter
+	 * @return The value of <b>address</b>
 	 */
 	public Address getAddress() {
 		return address;
 	}
 	
 	/**
-	 * @return The value of <em>residenceType</em>
+	 * Getter
+	 * @return The value of <b>residenceType</b>
 	 */
 	public int getResidenceType() {
 		return residenceType;
 	}
 	
 	/**
-	 * Set the value of <em>residenceType</em>
+	 * Setter
+	 * Set the value of <b>residenceType</b>
 	 */
 	public void setResidenceType(int type) {
 		this.residenceType = type;
 	}
 	
 	/**
-	 * @return The value of <em>status</em>
+	 * Getter
+	 * @return The value of <b>status</b>
 	 */
 	public int getStatus() {
 		return status;
 	}
 	
 	/**
-	 * Set the value of <em>status</em>
+	 * Setter
+	 * Set the value of <b>status</b>
 	 */
 	public void setStatus(int status) {
 		this.status = status;

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
- *
+ * Text User Interface for the realEstate Application.
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  */
 public class Application {
@@ -16,7 +16,11 @@ public class Application {
 	static String savefile = "residences.txt";
 	
 	/**
-	 * @param args
+	 * Main method containing the main menu
+	 * 
+	 * Reads a user input and will redirect to other methods in this class to.
+	 * 
+	 * @param args Commandline arguments (There are none)
 	 */
 	public static void main(String[] args) {
 		
@@ -79,6 +83,9 @@ public class Application {
 		}			
 	}
 	
+	/**
+	 * Method for adding a resale residence to the {@link Portfolio} <b>port</b> and saving them to file
+	 */
 	public static void addResale() {
 		String street, number, postalCode, place, energyLevel;
 		int rooms, price;
@@ -98,7 +105,7 @@ public class Application {
 		
 		// Enter postalcode and place
 		System.out.println("Please enter a postal code and a place, seperated by a space.");
-		try { strarr = readLineSplitNotEquals(" ", 2); }
+		try { strarr = readLineSplitEquals(" ", 2); }
 		catch (IOException e) {
 			return;
 		}
@@ -124,6 +131,9 @@ public class Application {
 		writeLines();
 	}
 	
+	/**
+	 * Method for adding a rental residence to the {@link Portfolio} <b>port</b> and saving them to file
+	 */
 	public static void addRental() {
 		String street, number, postalCode, place;
 		int rooms, price;
@@ -143,7 +153,7 @@ public class Application {
 		
 		// Enter postalcode and place
 		System.out.println("Please enter a postal code and a place, seperated by a space.");
-		try { strarr = readLineSplitNotEquals(" ", 2); }
+		try { strarr = readLineSplitEquals(" ", 2); }
 		catch (IOException e) {
 			return;
 		}
@@ -165,6 +175,9 @@ public class Application {
 		writeLines();
 	}
 	
+	/**
+	 * Method for receiving resale residences from the {@link Portfolio} <b>port</b> depending on a user selected filter
+	 */
 	public static void readResale() {
 		String inputstr;
 		ArrayList<Residence> rsdlist;
@@ -198,6 +211,9 @@ public class Application {
 			rsdlist.get(i).printPretty();
 	}
 	
+	/**
+	 * Method for receiving rental residences from the {@link Portfolio} <b>port</b> depending on a user selected filter
+	 */
 	public static void readRental() {
 		String inputstr;
 		ArrayList<Residence> rsdlist;
@@ -231,6 +247,9 @@ public class Application {
 			rsdlist.get(i).printPretty();
 	}
 	
+	/**
+	 * Method to exit this application after closing open readers.
+	 */
 	public static void exit() {
 		try { br.close(); }
 		catch (IOException e) {
@@ -240,11 +259,18 @@ public class Application {
 		System.exit(0);
 	}
 	
+	/**
+	 * Primitive clearConsole() method
+	 */
 	public static void writeLines() {
 		for(int i = 0; i < 50; i++)
 			System.out.println();
 	}
 	
+	/**
+	 * Method to clear the console of any text (not working)
+	 * @deprecated
+	 */
 	public static void clearConsole() {
 		try {
 			//String os = System.getProperty("os.name");
@@ -260,6 +286,10 @@ public class Application {
 		}
 	}
 	
+	/**
+	 * Read a line from the {@link BufferedReader}
+	 * @return String with the line read
+	 */
 	public static String readLine() {
 		String s = "";
 		try { s = br.readLine(); }
@@ -270,6 +300,10 @@ public class Application {
 		return s;
 	}
 	
+	/**
+	 * Read a line from the {@link BufferedReader}, split it at <b>regex</b> and check if the amount of {@link String}s is at least <b>min</b>
+	 * @return String[] with the line read split at <b>regex</b>
+	 */
 	public static String[] readLineSplitMin(String regex, int min) throws IOException {
 		String s = "";
 		try { s = br.readLine(); }
@@ -285,7 +319,11 @@ public class Application {
 		return temparr;
 	}
 	
-	public static String[] readLineSplitNotEquals(String regex, int notEqual) throws IOException {
+	/**
+	 * Read a line from the {@link BufferedReader}, split it at <b>regex</b> and check if the amount of {@link String}s is equal to <b>equal</b>
+	 * @return String[] with the line read split at <b>regex</b>
+	 */
+	public static String[] readLineSplitEquals(String regex, int equal) throws IOException {
 		String s = "";
 		try { s = br.readLine(); }
 		catch (IOException e) {
@@ -293,7 +331,7 @@ public class Application {
 			e.printStackTrace();
 		}
 		String[] temparr = s.split(regex);
-		if(temparr.length < notEqual) {
+		if(temparr.length < equal) {
 			System.out.println("Invalid input, returning to main menu\n");
 			throw new IOException();
 		}

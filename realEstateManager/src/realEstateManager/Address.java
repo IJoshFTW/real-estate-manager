@@ -15,12 +15,11 @@ public class Address {
 	private String place;
 	
 	/**
-	 * Create an <code>Address</code> with a street, house number, postal code and place.
+	 * Create an {@link Address} with a street, house number, postal code and place.
 	 * @param street Street string
 	 * @param number House number string
 	 * @param postalCode Postal code string
 	 * @param place Place string
-	 * @since 1.0
 	 */
 	public Address(String street, String number, String postalCode, String place) {
 		this.street = street;
@@ -31,8 +30,8 @@ public class Address {
 	
 	/**
 	 * Read a 2 line address in the format "[street] [number][newline][postalCode] [place]"
-	 * @param sc {@link java.util.Scanner} with the active line being the first line of the address
-	 * @return Address with the properties read from the <em>Scanner</em>
+	 * @param sc {@link java.util.Scanner} with the next line being the first line of the address.
+	 * @return {@link Address} with the properties read from the <b>Scanner</b>
 	 */
 	public static Address read(Scanner sc) {
 		String straat, huisnummer, postcode, plaats, inputstr, str1 = null, str2 = null;
@@ -69,7 +68,7 @@ public class Address {
 	}
 	
 	/**
-	 * Test if <code>obj</code> is an <code>Address</code> and contains the same values as this instance.
+	 * Test if <b>obj</b> is an {@link Address} and contains the same values as this instance.
 	 */
 	public boolean equals(Object obj) {
 		if(obj instanceof Address) {
@@ -84,28 +83,28 @@ public class Address {
 	}
 
 	/**
-	 * @return The value of <em>street</em>
+	 * @return The value of <B>street</b>
 	 */
 	public String getStreet() {
 		return street;
 	}
 
 	/**
-	 * @return The value of <em>number</em>
+	 * @return The value of <b>number</b>
 	 */
 	public String getNumber() {
 		return number;
 	}
 
 	/**
-	 * @return The value of <em>postalCode</em>
+	 * @return The value of <b>postalCode</b>
 	 */
 	public String getPostalCode() {
 		return postalCode;
 	}
 
 	/**
-	 * @return The value of <em>place</em>
+	 * @return The value of <b>place</b>
 	 */
 	public String getPlace() {
 		return place;

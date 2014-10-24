@@ -15,8 +15,8 @@ import org.junit.Test;
 public class PortfolioTest {
 	
 	Portfolio nullPort = new Portfolio();
-	Address myaddress = new Address("Rijksstraatweg", "570", "2026 RB", "HAARLEM");
-	Address hisaddress = new Address("Street of Sisters", "123", "1234 AB", "KINGS LANDING");
+	Address myaddress = new Address("Rijksstraatweg", "570", "2026RB", "HAARLEM");
+	Address hisaddress = new Address("Street of Sisters", "123", "1234AB", "KINGS LANDING");
 	Residence ResidenceA = new Residence(myaddress, 10, 450000);
 	Residence ResidenceB = new Residence(hisaddress, 4, 240000);
 	
@@ -74,6 +74,7 @@ public class PortfolioTest {
 		assertTrue(al.get(0).getRooms() == 7);
 		assertTrue(al.get(0).getAskingPrice() == 300000);
 		assertTrue(al.get(0).getResidenceType() == 1);
+		assertTrue(((ResaleResidence) al.get(0)).getEnergyLevel().equals("B"));
 		assertTrue(al.get(0).getStatus() == 1);
 		
 		assertTrue(al.get(1).getAddress().getStreet().equals("Streetname with spaces"));
@@ -82,6 +83,29 @@ public class PortfolioTest {
 		assertTrue(al.get(1).getAddress().getPlace().equals("Delft"));
 		assertTrue(al.get(1).getRooms() == 2);
 		assertTrue(al.get(1).getAskingPrice() == 12345);
+		assertTrue(al.get(1).getResidenceType() == 2);
+		assertTrue(al.get(1).getStatus() == 0);
+		System.out.println("+ PASSED");
+	}
+	
+	@Test
+	public void test_write() {
+		System.out.println();
+		System.out.println("test_write()");
+		String filename = "writePortfolioTest.txt";
+		
+		Portfolio writeport = new Portfolio();
+		writeport.addResidence(ResidenceA);
+		writeport.addResidence(ResidenceB);
+		writeport.write(filename);
+		
+		Portfolio newport = Portfolio.read(filename);
+		ArrayList<Residence> al = newport.getAllResidences();
+		assertTrue(al.size() == 2);
+		System.out.println(writeport.getAllResidences().toString());
+		System.out.println(al.toString());
+		assertTrue(al.contains(ResidenceA));
+		assertTrue(al.contains(ResidenceB));
 		System.out.println("+ PASSED");
 	}
 

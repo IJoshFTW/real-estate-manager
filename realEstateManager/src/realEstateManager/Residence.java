@@ -12,7 +12,7 @@ public class Residence {
 	private int rooms;
 	private int askingPrice;
 	private Address address;
-	private int residenceType;
+	private int residenceType;	// 0 = Normal, 1 = Resale, 2 = Rental
 	private int status;			// 0 = SOLD/RENTED, 1 = FOR SALE/FOR RENT
 	
 	/**
@@ -25,6 +25,7 @@ public class Residence {
 		this.address = address;
 		this.rooms = rooms;
 		this.askingPrice = askingPrice;
+		this.residenceType = 0;
 		this.status = 1;
 	}
 	
@@ -53,7 +54,7 @@ public class Residence {
 			type = 2; status = 0;
 			break;
 		default:
-			type = -1; status = -1;
+			type = 0; status = 1;
 		}
 		
 		Address adr = Address.read(sc);							// Process the address
@@ -69,8 +70,10 @@ public class Residence {
 		Residence rsd = new Residence(adr, rooms, askingPrice);		// Depending on the residence type, construct the correct object
 		if(type == 1)
 			rsd = ResaleResidence.read(sc, rsd);
-		else
+		else if (type == 2)
 			rsd = new RentalResidence(adr, rooms, askingPrice);
+		else
+			rsd = new Residence(adr, rooms, askingPrice);
 		
 		rsd.setStatus(status);
 		return rsd;
@@ -87,11 +90,16 @@ public class Residence {
 				out.println("FOR SALE:");
 			else
 				out.println("SOLD:");
-		else
+		else if(this.getResidenceType() == 2)
 			if(this.getStatus() == 1)
 				out.println("FOR RENT:");
 			else
 				out.println("RENTED:");
+		else
+			if(this.getStatus() == 1)
+				out.println("DEFAULT TYPE, UNPURCHASED");
+			else
+				out.println("DEFAULT TYPE, PURCHASED");
 		
 		// Write address
 		this.getAddress().write(out);
@@ -161,7 +169,9 @@ public class Residence {
 			if(this.getAddress().equals(rsd.getAddress()))
 				if(this.getRooms() == rsd.getRooms())
 					if(this.getAskingPrice() == rsd.getAskingPrice())
-						return true;
+						if(this.getResidenceType() == rsd.getResidenceType())
+							if(this.getStatus() == rsd.getStatus())
+									return true;
 		}
 		return false;
 	}
@@ -212,6 +222,7 @@ public class Residence {
 	/**
 	 * Setter
 	 * Set the value of <b>residenceType</b>
+	 * @param type type to make this {@link Residence}
 	 */
 	public void setResidenceType(int type) {
 		this.residenceType = type;
@@ -228,6 +239,7 @@ public class Residence {
 	/**
 	 * Setter
 	 * Set the value of <b>status</b>
+	 * @param status status to make this {@link Residence}
 	 */
 	public void setStatus(int status) {
 		this.status = status;

@@ -39,20 +39,10 @@ public class Portfolio {
 	}
 	
 	/**
-	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects.
-	 * @param rsd <b>Residence</b> to add
+	 * Write this {@link Portfolio} to a file <b>filename</b>
+	 * @param filename name of the file to write to
 	 */
-	public void addResidence(Residence rsd) {
-		residences.add(rsd);
-	}
-	
-	/**
-	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects and save it to a file <b>filename</b>
-	 * @param rsd <b>Residence</b> to add
-	 */
-	public void addResidence(Residence rsd, String filename) {
-		residences.add(rsd);
-		
+	public void write(String filename) {
 		PrintWriter out = null;
 		try {
 			out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
@@ -74,9 +64,28 @@ public class Portfolio {
 	}
 	
 	/**
+	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects.
+	 * @param rsd <b>Residence</b> to add
+	 */
+	public void addResidence(Residence rsd) {
+		residences.add(rsd);
+	}
+	
+	/**
+	 * Add a {@link Residence} to this collection of <b>Residence</b> Objects and save it to a file <b>filename</b>
+	 * @param rsd <b>Residence</b> to add
+	 * @param filename name of the file to write to
+	 */
+	public void addResidence(Residence rsd, String filename) {
+		residences.add(rsd);
+		this.write(filename);
+	}
+	
+	/**
 	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount
 	 * @param price Price to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
+	 * @throws NegativeException throws if the given <b>price</b> is negative.
 	 */
 	public ArrayList<Residence> residencesUpto(int price) throws NegativeException {
 		ArrayList<Residence> residences = new ArrayList<Residence>();
@@ -98,7 +107,9 @@ public class Portfolio {
 	/**
 	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount and of a certain type
 	 * @param price Price to check against
+	 * @param status Status to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
+	 * @throws NegativeException throws if the given <b>price</b> is negative
 	 */
 	public ArrayList<Residence> residencesUpto(int price, int status) throws NegativeException {
 		ArrayList<Residence> residences = new ArrayList<Residence>();
@@ -129,6 +140,7 @@ public class Portfolio {
 	
 	/**
 	 * Getter for all the {@link Residence} Objects of a certain <b>type</b>
+	 * @param type type of the residences to return.
 	 * @return All {@link Residence} Objects in this object of type <b>type</b>.
 	 */
 	public ArrayList<Residence> getAllResidences(int type) {

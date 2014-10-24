@@ -3,11 +3,10 @@ FOR SALE:
 Emmalaan 23
 3051JC Rotterdam
 7 rooms
-price 300000
-Energy level A
-FOR SALE:
+asking price 300000
+energy level B
+RENTED:
 Streetname with spaces 123
 1234AB Delft
 2 rooms
-price 12345
-Energy level C
+rental price 12345

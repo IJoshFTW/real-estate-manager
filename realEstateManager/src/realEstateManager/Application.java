@@ -26,16 +26,6 @@ public class Application {
 		
 		port = Portfolio.read(savefile);
 		
-		/*try {
-		Scanner sc = new Scanner(new File(savefile));
-		System.out.println(sc.nextLine());
-		System.out.println(sc.nextLine());
-		System.out.println(sc.nextLine());
-		}
-		catch (Exception e) {
-			
-		}*/
-		
 		String inputstr = null;
 		int inputint = 0;
 		writeLines();
@@ -49,6 +39,7 @@ public class Application {
 			System.out.println("    5. Exit program");
 			System.out.print("\nYour choice: ");
 			
+			inputint = 0;
 			try { inputstr = br.readLine(); }
 			catch (IOException e) {
 				System.out.println(e.getMessage());
@@ -56,7 +47,7 @@ public class Application {
 			}
 			try { inputint = Integer.parseInt(inputstr); }
 			catch (NumberFormatException e) {
-				System.out.println("Invalid input.");
+				System.out.println("Invalid input, returning to main menu\n");
 			}
 			
 			writeLines();
@@ -78,7 +69,8 @@ public class Application {
 				exit();
 				break;
 			default:
-				System.out.println("Invalid input\n");
+				System.out.println("Invalid input, returning to main menu\n");
+				break;
 			}
 		}			
 	}
@@ -87,9 +79,21 @@ public class Application {
 	 * Method for adding a resale residence to the {@link Portfolio} <b>port</b> and saving them to file
 	 */
 	public static void addResale() {
-		String street, number, postalCode, place, energyLevel;
-		int rooms, price;
+		String inputstr, street, number, postalCode, place, energyLevel;
+		int rooms, price, status;
 		System.out.println("You are about to add a new resale residence.\n");
+		
+		// Get status: FOR SALE or SOLD
+		System.out.println("Is this residence still for sale? [Y/N]");
+		inputstr = readLine();
+		if(inputstr.equals("Y")) {
+			status = 1;
+		} else if(inputstr.equals("N")) {
+			status = 0;
+		} else {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		// Enter streetname and number
 		System.out.println("Please enter a streetname and house number, seperated by a space. It is OK if your streetname has spaces.");
@@ -111,21 +115,36 @@ public class Application {
 		}
 		postalCode = strarr[0];
 		place = strarr[1];
+		for(int i = 2; i < strarr.length; i++)
+			place = place + " " + strarr[i];
 		Address adr = new Address(street, number, postalCode, place);
 		
 		// Enter number of rooms
 		System.out.println("Please enter a number of rooms.");
-		rooms = Integer.parseInt(readLine());
+		try { rooms = Integer.parseInt(readLine()); }
+		catch (NumberFormatException e) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		// Enter price
 		System.out.println("Please enter a price.");
-		price = Integer.parseInt(readLine());
+		try { price = Integer.parseInt(readLine()); }
+		catch (NumberFormatException e) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		// Enter energy level
 		System.out.println("Please enter an energy level.");
 		energyLevel = readLine();
+		if(energyLevel.length() == 0) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		Residence rsd = new ResaleResidence(adr, rooms, price, energyLevel);
+		rsd.setStatus(status);
 		port.addResidence(rsd, savefile);
 		System.out.println(port.getAllResidences().toString());
 		writeLines();
@@ -135,9 +154,21 @@ public class Application {
 	 * Method for adding a rental residence to the {@link Portfolio} <b>port</b> and saving them to file
 	 */
 	public static void addRental() {
-		String street, number, postalCode, place;
-		int rooms, price;
+		String street, number, postalCode, place, inputstr;
+		int rooms, price, status;
 		System.out.println("You are about to add a new rental residence.\n");
+		
+		// Get status: FOR RENT or RENTED
+		System.out.println("Is this residence still for rent? [Y/N]");
+		inputstr = readLine();
+		if(inputstr.equals("Y")) {
+			status = 1;
+		} else if(inputstr.equals("N")) {
+			status = 0;
+		} else {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		// Enter streetname and number
 		System.out.println("Please enter a streetname and house number, seperated by a space. It is OK if your streetname has spaces.");
@@ -163,13 +194,22 @@ public class Application {
 		
 		// Enter number of rooms
 		System.out.println("Please enter a number of rooms.");
-		rooms = Integer.parseInt(readLine());
+		try { rooms = Integer.parseInt(readLine()); }
+		catch (NumberFormatException e) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
 		
 		// Enter price
 		System.out.println("Please enter a price.");
-		price = Integer.parseInt(readLine());
-		
+		try { price = Integer.parseInt(readLine()); }
+		catch (NumberFormatException e) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
+
 		Residence rsd = new RentalResidence(adr, rooms, price);
+		rsd.setStatus(status);
 		port.addResidence(rsd, savefile);
 		System.out.println(port.getAllResidences().toString());
 		writeLines();
@@ -190,7 +230,7 @@ public class Application {
 		} else if(inputstr.equals("N")) {
 			status = 0;
 		} else {
-			System.out.println("Invalid input\n");
+			System.out.println("Invalid input, returning to main menu\n");
 			return;
 		}
 		System.out.println("Enter a maximum price for the residences. 0 will skip this step.");
@@ -201,7 +241,7 @@ public class Application {
 			rsdlist = resaleport.residencesUpto(price, status);
 		}
 		catch (NegativeException e) {
-			System.out.println("Invalid input\n");
+			System.out.println("Invalid input, returning to main menu\n");
 			return;
 		}
 		
@@ -226,7 +266,7 @@ public class Application {
 		} else if(inputstr.equals("N")) {
 			status = 0;
 		} else {
-			System.out.println("Invalid input\n");
+			System.out.println("Invalid input, returning to main menu\n");
 			return;
 		}
 		System.out.println("Enter a maximum price for the residences. 0 will skip this step.");
@@ -237,7 +277,7 @@ public class Application {
 			rsdlist = rentalport.residencesUpto(price, status);
 		}
 		catch (NegativeException e) {
-			System.out.println("Invalid input\n");
+			System.out.println("Invalid input, returning to main menu\n");
 			return;
 		}
 		
@@ -301,8 +341,11 @@ public class Application {
 	}
 	
 	/**
-	 * Read a line from the {@link BufferedReader}, split it at <b>regex</b> and check if the amount of {@link String}s is at least <b>min</b>
+	 * Read a line from the {@link BufferedReader}, split it around <b>regex</b> and check if the amount of {@link String}s is at least <b>min</b>
+	 * @param regex regular expression to split around
+	 * @param min minimum amount of resulting Strings
 	 * @return String[] with the line read split at <b>regex</b>
+	 * @throws IOException throws if the number of resulting Strings is less than <b>min</b>
 	 */
 	public static String[] readLineSplitMin(String regex, int min) throws IOException {
 		String s = "";
@@ -320,8 +363,11 @@ public class Application {
 	}
 	
 	/**
-	 * Read a line from the {@link BufferedReader}, split it at <b>regex</b> and check if the amount of {@link String}s is equal to <b>equal</b>
+	 * Read a line from the {@link BufferedReader}, split it around <b>regex</b> and check if the amount of {@link String}s is equal to <b>equal</b>
+	 * @param regex regular expression to split around
+	 * @param equal amount of resulting Strings
 	 * @return String[] with the line read split at <b>regex</b>
+	 * @throws IOException throws if the number of resulting Strings is not equal to <b>equal</b>
 	 */
 	public static String[] readLineSplitEquals(String regex, int equal) throws IOException {
 		String s = "";

@@ -1,0 +1,11 @@
+2
+DEFAULT TYPE, UNPURCHASED
+Rijksstraatweg 570
+2026RB HAARLEM
+10 rooms
+rental price 450000
+DEFAULT TYPE, UNPURCHASED
+Street of Sisters 123
+1234AB KINGS LANDING
+4 rooms
+rental price 240000

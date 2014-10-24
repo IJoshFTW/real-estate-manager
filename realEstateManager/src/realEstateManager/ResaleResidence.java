@@ -5,7 +5,8 @@ import java.util.Scanner;
 /**
  * A variant of {@link Residence}. This variant is for resale residences, which also have an energy level.
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
- * @see Residence, EnergyLevelResidence
+ * @see EnergyLevelResidence
+ * @see Residence
  */
 public class ResaleResidence extends Residence implements EnergyLevelResidence {
 	

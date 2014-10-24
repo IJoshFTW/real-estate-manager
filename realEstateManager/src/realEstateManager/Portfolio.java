@@ -58,37 +58,8 @@ public class Portfolio {
 			out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
 			out.println(residences.size());
 			for(int i = 0; i < residences.size(); i++) {
-				Residence currsd = residences.get(i);
-				
-				// Write status
-				if(currsd.getResidenceType() == 1)
-					if(currsd.getStatus() == 1)
-						out.println("FOR SALE:");
-					else
-						out.println("SOLD:");
-				else
-					if(currsd.getStatus() == 1)
-						out.println("FOR RENT:");
-					else
-						out.println("RENTED:");
-				
-				// Write address
-				out.println(currsd.getAddress().getStreet() + " " + currsd.getAddress().getNumber());
-				out.println(currsd.getAddress().getPostalCode() + " " + currsd.getAddress().getPlace());
-				
-				// Write rooms
-				out.println(currsd.getRooms() + " rooms");
-				
-				// Write price with correct format and energy level if applicable
-				if(currsd.getResidenceType() == 1) {
-					if(currsd.getStatus() == 1)
-						out.println("asking price " + currsd.getAskingPrice());
-					else
-						out.println("final price " + currsd.getAskingPrice());
-					out.println("energy level " + ((ResaleResidence)currsd).getEnergyLevel());
-				} else {
-					out.println("rental price " + currsd.getAskingPrice());
-				}
+				Residence currsd = residences.get(i);				
+				currsd.write(out);
 			}
 				
 		}

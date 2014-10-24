@@ -1,5 +1,6 @@
 package realEstateManager;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
@@ -58,6 +59,15 @@ public class Address {
 		
 		Address adr = new Address(straat, huisnummer, postcode, plaats);
 		return adr;
+	}
+	
+	/**
+	 * Write this {@link Address} in pretty format to a {@link PrintWriter}
+	 * @param out <b>PrintWriter</b> to write to
+	 */
+	public void write(PrintWriter out) {
+		out.println(this.getStreet() + " " + this.getNumber());
+		out.println(this.getPostalCode() + " " + this.getPlace());
 	}
 	
 	/**

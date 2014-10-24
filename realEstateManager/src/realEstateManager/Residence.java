@@ -1,5 +1,6 @@
 package realEstateManager;
 
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 /**
@@ -73,6 +74,41 @@ public class Residence {
 		
 		rsd.setStatus(status);
 		return rsd;
+	}
+	
+	/**
+	 * Write this {@link Residence} in pretty format to a {@link PrintWriter}
+	 * @param out <b>PrintWriter</b> to write to
+	 */
+	public void write(PrintWriter out) {
+		// Write status
+		if(this.getResidenceType() == 1)
+			if(this.getStatus() == 1)
+				out.println("FOR SALE:");
+			else
+				out.println("SOLD:");
+		else
+			if(this.getStatus() == 1)
+				out.println("FOR RENT:");
+			else
+				out.println("RENTED:");
+		
+		// Write address
+		this.getAddress().write(out);
+		
+		// Write rooms
+		out.println(this.getRooms() + " rooms");
+		
+		// Write price with correct format and energy level if applicable
+		if(this.getResidenceType() == 1) {
+			if(this.getStatus() == 1)
+				out.println("asking price " + this.getAskingPrice());
+			else
+				out.println("final price " + this.getAskingPrice());
+			out.println("energy level " + ((ResaleResidence)this).getEnergyLevel());
+		} else {
+			out.println("rental price " + this.getAskingPrice());
+		}
 	}
 	
 	/**

@@ -1,2 +1,4 @@
-1413636011|[Info] Project is opened!
-1413636927|[User] 1st contributor joins - Joshua Slik
+1413978988|[Info] Project is opened on 2014-10-22 11:52 GMT!
+1413978989|[User] 1st contributor joins - Joshua Slik
+1414066320|[Milestone] First GitHub Issue is filed!
+1414106719|[Release] version 1.0 is released on 2014-10-24 01:25 GMT!

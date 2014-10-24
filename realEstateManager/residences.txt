@@ -1,18 +1,1 @@
-3
-FOR SALE:
-Rijksstraatweg 570
-2026RB Haarlem
-6 rooms
-asking price 420000
-energylevel A
-FOR SALE:
-Red Keep 1
-1234KL Kings Landing
-200 rooms
-asking price 1000000000
-energylevel E
-FOR RENT:
-Roadside Inn 5A
-1234KL Kings Landing
-1 rooms
-rental price 300
+0

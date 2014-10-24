@@ -54,12 +54,9 @@ public class Portfolio {
 		residences.add(rsd);
 		
 		PrintWriter out = null;
-		Scanner sc = null;
 		try {
-			sc = new Scanner(new File(filename));
-			int residenceAmount = Integer.parseInt(sc.nextLine());
 			out = new PrintWriter(new BufferedWriter(new FileWriter(filename, false)));
-			out.println(residenceAmount + 1);
+			out.println(residences.size());
 			for(int i = 0; i < residences.size(); i++) {
 				Residence currsd = residences.get(i);
 				
@@ -88,9 +85,9 @@ public class Portfolio {
 						out.println("asking price " + currsd.getAskingPrice());
 					else
 						out.println("final price " + currsd.getAskingPrice());
-					out.println("energy level" + ((ResaleResidence)currsd).getEnergyLevel());
+					out.println("energy level " + ((ResaleResidence)currsd).getEnergyLevel());
 				} else {
-					out.println();
+					out.println("rental price " + currsd.getAskingPrice());
 				}
 			}
 				
@@ -102,7 +99,6 @@ public class Portfolio {
 		}
 		finally {
 			out.close();
-			sc.close();
 		}
 	}
 	

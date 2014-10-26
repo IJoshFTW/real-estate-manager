@@ -1,0 +1,371 @@
+user:Joshua Slik
+1413978988
+:000000 100644 0000000... 36609d4... A	README.md
+
+user:Joshua Slik
+1413979130
+:000000 100644 0000000... 2c4930b... A	fetchGravatarsForGource.pl
+:000000 100644 0000000... 86ac9d6... A	gource/autopull.gourcefile.sh
+:000000 100644 0000000... 5008acf... A	gource/defaultuserimage.gourcefile.png
+:000000 100644 0000000... 440e6a9... A	gource/gource-captions.gourcefile.txt
+:000000 100644 0000000... eea2c65... A	gource/gource-config.gourcefile.ini
+:000000 100644 0000000... 71ebe7c... A	gource/gourceLIVE.gourcefile.bat
+:000000 100644 0000000... 27b4ad5... A	gource/run-gource-linux.gourcefile.sh
+:000000 100644 0000000... 8b19bad... A	gource/run-gource-windows.gourcefile.ps1
+
+user:Joshua Slik
+1413979724
+:000000 100644 0000000... fceb480... A	realEstateManager/.classpath
+:000000 100644 0000000... ae3c172... A	realEstateManager/.gitignore
+:000000 100644 0000000... 7e56e8f... A	realEstateManager/.project
+:000000 100644 0000000... 3a21537... A	realEstateManager/.settings/org.eclipse.jdt.core.prefs
+
+user:Joshua Slik
+1413981972
+:000000 100644 0000000... c4fdaac... A	realEstateManager/src/realEstateManager/Address.java
+:000000 100644 0000000... 01cfd72... A	realEstateManager/src/realEstateManager/package-info.java
+
+user:Joshua Slik
+1413982557
+:000000 100644 0000000... 2c46d77... A	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1413983391
+:100644 100644 c4fdaac... 557b070... M	realEstateManager/src/realEstateManager/Address.java
+:100644 100644 2c46d77... cb7edda... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1413984326
+:100644 100644 cb7edda... a52ea73... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1413985599
+:000000 100644 0000000... c6944a7... A	.gitignore
+:100644 100644 440e6a9... 2f72d30... M	gource/gource-captions.gourcefile.txt
+:100644 100644 eea2c65... eb9e0a9... M	gource/gource-config.gourcefile.ini
+:100644 100644 8b19bad... 33b9fdd... M	gource/run-gource-windows.gourcefile.ps1
+
+user:Joshua Slik
+1414008937
+:100644 100644 557b070... 05b993f... M	realEstateManager/src/realEstateManager/Address.java
+:000000 100644 0000000... c1985b0... A	realEstateManager/src/realEstateManager/NegativeException.java
+:000000 100644 0000000... 678aa54... A	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 a52ea73... 93a5ae2... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1414010642
+:100644 100644 eb9e0a9... 5084653... M	gource/gource-config.gourcefile.ini
+:000000 100644 0000000... dc0c002... A	realEstateManager/doc/allclasses-frame.html
+:000000 100644 0000000... 6a98eba... A	realEstateManager/doc/allclasses-noframe.html
+:000000 100644 0000000... c17f769... A	realEstateManager/doc/constant-values.html
+:000000 100644 0000000... 446e5c5... A	realEstateManager/doc/deprecated-list.html
+:000000 100644 0000000... 4abfc84... A	realEstateManager/doc/help-doc.html
+:000000 100644 0000000... 663d011... A	realEstateManager/doc/index-files/index-1.html
+:000000 100644 0000000... 67a099a... A	realEstateManager/doc/index-files/index-2.html
+:000000 100644 0000000... e4b4a17... A	realEstateManager/doc/index-files/index-3.html
+:000000 100644 0000000... eeaeb44... A	realEstateManager/doc/index-files/index-4.html
+:000000 100644 0000000... c4e440b... A	realEstateManager/doc/index-files/index-5.html
+:000000 100644 0000000... 7a1cb08... A	realEstateManager/doc/index-files/index-6.html
+:000000 100644 0000000... 4d60b86... A	realEstateManager/doc/index-files/index-7.html
+:000000 100644 0000000... 54ea677... A	realEstateManager/doc/index-files/index-8.html
+:000000 100644 0000000... 598d78c... A	realEstateManager/doc/index.html
+:000000 100644 0000000... 580a8a0... A	realEstateManager/doc/overview-tree.html
+:000000 100644 0000000... 66d12fd... A	realEstateManager/doc/package-list
+:000000 100644 0000000... a7723be... A	realEstateManager/doc/realEstateManager/Address.html
+:000000 100644 0000000... e0e12f9... A	realEstateManager/doc/realEstateManager/NegativeException.html
+:000000 100644 0000000... ebe6839... A	realEstateManager/doc/realEstateManager/Portfolio.html
+:000000 100644 0000000... 8c96c56... A	realEstateManager/doc/realEstateManager/Residence.html
+:000000 100644 0000000... 862f753... A	realEstateManager/doc/realEstateManager/class-use/Address.html
+:000000 100644 0000000... 406b2b0... A	realEstateManager/doc/realEstateManager/class-use/NegativeException.html
+:000000 100644 0000000... 7994604... A	realEstateManager/doc/realEstateManager/class-use/Portfolio.html
+:000000 100644 0000000... 9eb1211... A	realEstateManager/doc/realEstateManager/class-use/Residence.html
+:000000 100644 0000000... ff8891d... A	realEstateManager/doc/realEstateManager/package-frame.html
+:000000 100644 0000000... 1d91ae4... A	realEstateManager/doc/realEstateManager/package-summary.html
+:000000 100644 0000000... 2c0ed9c... A	realEstateManager/doc/realEstateManager/package-tree.html
+:000000 100644 0000000... a7b60af... A	realEstateManager/doc/realEstateManager/package-use.html
+:000000 100644 0000000... b346356... A	realEstateManager/doc/script.js
+:000000 100644 0000000... e7f2596... A	realEstateManager/doc/serialized-form.html
+:000000 100644 0000000... cebb4fd... A	realEstateManager/doc/stylesheet.css
+:100644 100644 678aa54... 5890fc7... M	realEstateManager/src/realEstateManager/Portfolio.java
+
+user:Joshua Slik
+1414011282
+:100644 100644 36609d4... be1248c... M	README.md
+
+user:Joshua Slik
+1414011501
+:000000 100644 0000000... 447a986... A	CONTRIBUTING.md
+
+user:Joshua Slik
+1414011712
+:100644 100644 dc0c002... 54ef064... M	realEstateManager/doc/allclasses-frame.html
+:100644 100644 6a98eba... d27a4a1... M	realEstateManager/doc/allclasses-noframe.html
+:100644 100644 c17f769... 19ad325... M	realEstateManager/doc/constant-values.html
+:100644 100644 446e5c5... e780e70... M	realEstateManager/doc/deprecated-list.html
+:100644 100644 4abfc84... ffd5590... M	realEstateManager/doc/help-doc.html
+:100644 100644 663d011... 1c8e457... M	realEstateManager/doc/index-files/index-1.html
+:100644 100644 67a099a... 1607f3d... M	realEstateManager/doc/index-files/index-2.html
+:100644 100644 e4b4a17... c4d9c6d... M	realEstateManager/doc/index-files/index-3.html
+:100644 100644 eeaeb44... d21bb3c... M	realEstateManager/doc/index-files/index-4.html
+:100644 100644 c4e440b... 2fe8f8c... M	realEstateManager/doc/index-files/index-5.html
+:100644 100644 7a1cb08... aa035b0... M	realEstateManager/doc/index-files/index-6.html
+:100644 100644 4d60b86... 0e94de9... M	realEstateManager/doc/index-files/index-7.html
+:100644 100644 54ea677... 1667718... M	realEstateManager/doc/index-files/index-8.html
+:100644 100644 598d78c... 6c97842... M	realEstateManager/doc/index.html
+:100644 100644 580a8a0... ff5a79b... M	realEstateManager/doc/overview-tree.html
+:100644 100644 a7723be... e04b017... M	realEstateManager/doc/realEstateManager/Address.html
+:100644 100644 e0e12f9... a258aa0... M	realEstateManager/doc/realEstateManager/NegativeException.html
+:100644 100644 ebe6839... fd2a1de... M	realEstateManager/doc/realEstateManager/Portfolio.html
+:100644 100644 8c96c56... 83e7e2a... M	realEstateManager/doc/realEstateManager/Residence.html
+:100644 100644 862f753... c8c0a02... M	realEstateManager/doc/realEstateManager/class-use/Address.html
+:100644 100644 406b2b0... 7ae6b4c... M	realEstateManager/doc/realEstateManager/class-use/NegativeException.html
+:100644 100644 7994604... ed30d8b... M	realEstateManager/doc/realEstateManager/class-use/Portfolio.html
+:100644 100644 9eb1211... cfc0a9d... M	realEstateManager/doc/realEstateManager/class-use/Residence.html
+:100644 100644 ff8891d... 57ca89e... M	realEstateManager/doc/realEstateManager/package-frame.html
+:100644 100644 1d91ae4... 8a71080... M	realEstateManager/doc/realEstateManager/package-summary.html
+:100644 100644 2c0ed9c... fa77fc4... M	realEstateManager/doc/realEstateManager/package-tree.html
+:100644 100644 a7b60af... d3390ee... M	realEstateManager/doc/realEstateManager/package-use.html
+:100644 100644 e7f2596... 2388031... M	realEstateManager/doc/serialized-form.html
+
+user:Joshua Slik
+1414051878
+:000000 100644 0000000... 83ab8ba... A	LICENSE
+
+user:Joshua Slik
+1414066412
+:000000 100644 0000000... b7f85cb... A	realEstateManager/src/realEstateManager/RentalResidence.java
+:000000 100644 0000000... 3de9a37... A	realEstateManager/src/realEstateManager/ResaleResidence.java
+:100644 100644 93a5ae2... 4230196... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1414106719
+:000000 100644 0000000... 4e8603d... A	realEstateManager/Application.jar
+:000000 100644 0000000... 3496ce8... A	realEstateManager/residences.txt
+:000000 100644 0000000... d5e7c47... A	realEstateManager/run.bat
+:000000 100644 0000000... a07e74d... A	realEstateManager/src/realEstateManager/Application.java
+:000000 100644 0000000... 3f2c7ad... A	realEstateManager/src/realEstateManager/EnergyLevelResidence.java
+:100644 100644 5890fc7... 03ee5fc... M	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 3de9a37... c425d42... M	realEstateManager/src/realEstateManager/ResaleResidence.java
+:100644 100644 4230196... 91e3a60... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1414110507
+:100644 100644 2f72d30... e901de5... M	gource/gource-captions.gourcefile.txt
+:100644 100644 5084653... e9e8dd1... M	gource/gource-config.gourcefile.ini
+:100644 100644 54ef064... 5e4e0d2... M	realEstateManager/doc/allclasses-frame.html
+:100644 100644 d27a4a1... bc0b315... M	realEstateManager/doc/allclasses-noframe.html
+:100644 100644 19ad325... 6c4f2bd... M	realEstateManager/doc/constant-values.html
+:100644 100644 e780e70... b9d176d... M	realEstateManager/doc/deprecated-list.html
+:100644 100644 ffd5590... 17a79d1... M	realEstateManager/doc/help-doc.html
+:100644 100644 1c8e457... c04470f... M	realEstateManager/doc/index-files/index-1.html
+:000000 100644 0000000... 53987a2... A	realEstateManager/doc/index-files/index-10.html
+:000000 100644 0000000... a3e6fc6... A	realEstateManager/doc/index-files/index-11.html
+:100644 100644 1607f3d... 5d4102c... M	realEstateManager/doc/index-files/index-2.html
+:100644 100644 c4d9c6d... fc84ce5... M	realEstateManager/doc/index-files/index-3.html
+:100644 100644 d21bb3c... c8149fc... M	realEstateManager/doc/index-files/index-4.html
+:100644 100644 2fe8f8c... e584cd3... M	realEstateManager/doc/index-files/index-5.html
+:100644 100644 aa035b0... fefb7bf... M	realEstateManager/doc/index-files/index-6.html
+:100644 100644 0e94de9... 0091dbc... M	realEstateManager/doc/index-files/index-7.html
+:100644 100644 1667718... ab34c4d... M	realEstateManager/doc/index-files/index-8.html
+:000000 100644 0000000... 29b9caf... A	realEstateManager/doc/index-files/index-9.html
+:100644 100644 6c97842... 667e160... M	realEstateManager/doc/index.html
+:100644 100644 ff5a79b... 03756d0... M	realEstateManager/doc/overview-tree.html
+:100644 100644 e04b017... 5b57846... M	realEstateManager/doc/realEstateManager/Address.html
+:000000 100644 0000000... 5341c56... A	realEstateManager/doc/realEstateManager/Application.html
+:000000 100644 0000000... 4d7e6c8... A	realEstateManager/doc/realEstateManager/EnergyLevelResidence.html
+:100644 100644 a258aa0... 650507a... M	realEstateManager/doc/realEstateManager/NegativeException.html
+:100644 100644 fd2a1de... fe060a3... M	realEstateManager/doc/realEstateManager/Portfolio.html
+:000000 100644 0000000... 435e37d... A	realEstateManager/doc/realEstateManager/RentalResidence.html
+:000000 100644 0000000... e9f2f4a... A	realEstateManager/doc/realEstateManager/ResaleResidence.html
+:100644 100644 83e7e2a... 5ac1c8f... M	realEstateManager/doc/realEstateManager/Residence.html
+:100644 100644 c8c0a02... 802ebd1... M	realEstateManager/doc/realEstateManager/class-use/Address.html
+:000000 100644 0000000... e837c52... A	realEstateManager/doc/realEstateManager/class-use/Application.html
+:000000 100644 0000000... fbcc3db... A	realEstateManager/doc/realEstateManager/class-use/EnergyLevelResidence.html
+:100644 100644 7ae6b4c... 72bac11... M	realEstateManager/doc/realEstateManager/class-use/NegativeException.html
+:100644 100644 ed30d8b... 7cd6b5c... M	realEstateManager/doc/realEstateManager/class-use/Portfolio.html
+:000000 100644 0000000... 3585c7c... A	realEstateManager/doc/realEstateManager/class-use/RentalResidence.html
+:000000 100644 0000000... 21a6d5a... A	realEstateManager/doc/realEstateManager/class-use/ResaleResidence.html
+:100644 100644 cfc0a9d... 85b6acc... M	realEstateManager/doc/realEstateManager/class-use/Residence.html
+:100644 100644 57ca89e... 9d56ff7... M	realEstateManager/doc/realEstateManager/package-frame.html
+:100644 100644 8a71080... 86a5810... M	realEstateManager/doc/realEstateManager/package-summary.html
+:100644 100644 fa77fc4... d66f9cc... M	realEstateManager/doc/realEstateManager/package-tree.html
+:100644 100644 d3390ee... d8598e8... M	realEstateManager/doc/realEstateManager/package-use.html
+:100644 100644 2388031... 8a14e56... M	realEstateManager/doc/serialized-form.html
+
+user:Joshua Slik
+1414110590
+:100644 100644 83ab8ba... 4039d90... M	LICENSE
+
+user:Joshua Slik
+1414111214
+user:Joshua Slik
+1414144384
+:100644 100644 fceb480... 373dce4... M	realEstateManager/.classpath
+:100644 100644 3a21537... a698e59... M	realEstateManager/.settings/org.eclipse.jdt.core.prefs
+:000000 100644 0000000... 9bda731... A	realEstateManager/PortfolioTest.txt
+:100644 100644 03ee5fc... 9b2b3ac... M	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 91e3a60... 569dd8b... M	realEstateManager/src/realEstateManager/Residence.java
+:000000 100644 0000000... 3de36af... A	realEstateManager/src/tests/AddressTest.java
+:000000 100644 0000000... efeb981... A	realEstateManager/src/tests/PortfolioTest.java
+:000000 100644 0000000... f064514... A	realEstateManager/src/tests/RentalResidenceTest.java
+:000000 100644 0000000... 081ad58... A	realEstateManager/src/tests/ResaleResidenceTest.java
+:000000 100644 0000000... 960cee6... A	realEstateManager/src/tests/ResidenceTest.java
+:000000 100644 0000000... 8f7d550... A	realEstateManager/src/tests/package-info.java
+
+user:Joshua Slik
+1414146205
+:100644 100644 4039d90... e20b21e... M	LICENSE
+:100644 100644 4e8603d... e0306c3... M	realEstateManager/Application.jar
+:100644 100644 3496ce8... c227083... M	realEstateManager/residences.txt
+:100644 100644 9b2b3ac... 8628371... M	realEstateManager/src/realEstateManager/Portfolio.java
+
+user:Joshua Slik
+1414153763
+:100644 100644 e0306c3... 7def302... M	realEstateManager/Application.jar
+:100644 100644 5e4e0d2... edb9d7f... M	realEstateManager/doc/allclasses-frame.html
+:100644 100644 bc0b315... 3c496c5... M	realEstateManager/doc/allclasses-noframe.html
+:100644 100644 6c4f2bd... ff1b9e0... M	realEstateManager/doc/constant-values.html
+:100644 100644 b9d176d... e9e4d27... M	realEstateManager/doc/deprecated-list.html
+:100644 100644 17a79d1... 2fd83f4... M	realEstateManager/doc/help-doc.html
+:100644 100644 c04470f... 89492db... M	realEstateManager/doc/index-files/index-1.html
+:100644 100644 53987a2... 4a7491e... M	realEstateManager/doc/index-files/index-10.html
+:100644 100644 a3e6fc6... 2daadc3... M	realEstateManager/doc/index-files/index-11.html
+:100644 100644 5d4102c... ce7f303... M	realEstateManager/doc/index-files/index-2.html
+:100644 100644 fc84ce5... 60ede65... M	realEstateManager/doc/index-files/index-3.html
+:100644 100644 c8149fc... b04a8fd... M	realEstateManager/doc/index-files/index-4.html
+:100644 100644 e584cd3... a3a8fad... M	realEstateManager/doc/index-files/index-5.html
+:100644 100644 fefb7bf... 3571800... M	realEstateManager/doc/index-files/index-6.html
+:100644 100644 0091dbc... 3d35ee7... M	realEstateManager/doc/index-files/index-7.html
+:100644 100644 ab34c4d... aaa4f9a... M	realEstateManager/doc/index-files/index-8.html
+:100644 100644 29b9caf... 6da8e3c... M	realEstateManager/doc/index-files/index-9.html
+:100644 100644 667e160... c780e84... M	realEstateManager/doc/index.html
+:000000 100644 0000000... a4d872a... A	realEstateManager/doc/overview-frame.html
+:000000 100644 0000000... 2fe8a62... A	realEstateManager/doc/overview-summary.html
+:100644 100644 03756d0... da784a3... M	realEstateManager/doc/overview-tree.html
+:100644 100644 66d12fd... 47a809a... M	realEstateManager/doc/package-list
+:100644 100644 5b57846... ca630bd... M	realEstateManager/doc/realEstateManager/Address.html
+:100644 100644 5341c56... 0b93100... M	realEstateManager/doc/realEstateManager/Application.html
+:100644 100644 4d7e6c8... 595561b... M	realEstateManager/doc/realEstateManager/EnergyLevelResidence.html
+:100644 100644 650507a... c231f8c... M	realEstateManager/doc/realEstateManager/NegativeException.html
+:100644 100644 fe060a3... ca2c074... M	realEstateManager/doc/realEstateManager/Portfolio.html
+:100644 100644 435e37d... 3438304... M	realEstateManager/doc/realEstateManager/RentalResidence.html
+:100644 100644 e9f2f4a... fea8f37... M	realEstateManager/doc/realEstateManager/ResaleResidence.html
+:100644 100644 5ac1c8f... 39b49a8... M	realEstateManager/doc/realEstateManager/Residence.html
+:100644 100644 802ebd1... 6356533... M	realEstateManager/doc/realEstateManager/class-use/Address.html
+:100644 100644 e837c52... 231e5d9... M	realEstateManager/doc/realEstateManager/class-use/Application.html
+:100644 100644 fbcc3db... 9003106... M	realEstateManager/doc/realEstateManager/class-use/EnergyLevelResidence.html
+:100644 100644 72bac11... 5659954... M	realEstateManager/doc/realEstateManager/class-use/NegativeException.html
+:100644 100644 7cd6b5c... 6f5b1db... M	realEstateManager/doc/realEstateManager/class-use/Portfolio.html
+:100644 100644 3585c7c... 064aeb4... M	realEstateManager/doc/realEstateManager/class-use/RentalResidence.html
+:100644 100644 21a6d5a... 0a5a726... M	realEstateManager/doc/realEstateManager/class-use/ResaleResidence.html
+:100644 100644 85b6acc... 8dedaad... M	realEstateManager/doc/realEstateManager/class-use/Residence.html
+:100644 100644 9d56ff7... 5fc2490... M	realEstateManager/doc/realEstateManager/package-frame.html
+:100644 100644 86a5810... b35637d... M	realEstateManager/doc/realEstateManager/package-summary.html
+:100644 100644 d66f9cc... 4e803c8... M	realEstateManager/doc/realEstateManager/package-tree.html
+:100644 100644 d8598e8... 1e28b6d... M	realEstateManager/doc/realEstateManager/package-use.html
+:100644 100644 8a14e56... e897e3d... M	realEstateManager/doc/serialized-form.html
+:000000 100644 0000000... 56e061f... A	realEstateManager/doc/tests/AddressTest.html
+:000000 100644 0000000... 8f2c5f1... A	realEstateManager/doc/tests/PortfolioTest.html
+:000000 100644 0000000... 84b0c07... A	realEstateManager/doc/tests/RentalResidenceTest.html
+:000000 100644 0000000... c577bdf... A	realEstateManager/doc/tests/ResaleResidenceTest.html
+:000000 100644 0000000... 0de0950... A	realEstateManager/doc/tests/ResidenceTest.html
+:000000 100644 0000000... 1b92b44... A	realEstateManager/doc/tests/class-use/AddressTest.html
+:000000 100644 0000000... ca99231... A	realEstateManager/doc/tests/class-use/PortfolioTest.html
+:000000 100644 0000000... c78119b... A	realEstateManager/doc/tests/class-use/RentalResidenceTest.html
+:000000 100644 0000000... 4458411... A	realEstateManager/doc/tests/class-use/ResaleResidenceTest.html
+:000000 100644 0000000... abe3afa... A	realEstateManager/doc/tests/class-use/ResidenceTest.html
+:000000 100644 0000000... 493c7e9... A	realEstateManager/doc/tests/package-frame.html
+:000000 100644 0000000... ed3b120... A	realEstateManager/doc/tests/package-summary.html
+:000000 100644 0000000... 17062c3... A	realEstateManager/doc/tests/package-tree.html
+:000000 100644 0000000... 2c71ce4... A	realEstateManager/doc/tests/package-use.html
+:100644 100644 05b993f... d27316e... M	realEstateManager/src/realEstateManager/Address.java
+:100644 100644 a07e74d... d5afe95... M	realEstateManager/src/realEstateManager/Application.java
+:100644 100644 3f2c7ad... 41d88f9... M	realEstateManager/src/realEstateManager/EnergyLevelResidence.java
+:100644 100644 c1985b0... 69811b3... M	realEstateManager/src/realEstateManager/NegativeException.java
+:100644 100644 8628371... cdc4ca4... M	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 b7f85cb... 4cbbe7a... M	realEstateManager/src/realEstateManager/RentalResidence.java
+:100644 100644 c425d42... 67a3858... M	realEstateManager/src/realEstateManager/ResaleResidence.java
+:100644 100644 569dd8b... 6923dd2... M	realEstateManager/src/realEstateManager/Residence.java
+:100644 100644 01cfd72... 89e332f... M	realEstateManager/src/realEstateManager/package-info.java
+
+user:Joshua Slik
+1414154408
+:100644 100644 7def302... 8096179... M	realEstateManager/Application.jar
+:100644 100644 d27316e... 63cf6ad... M	realEstateManager/src/realEstateManager/Address.java
+:100644 100644 cdc4ca4... eb14601... M	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 6923dd2... 7776836... M	realEstateManager/src/realEstateManager/Residence.java
+
+user:Joshua Slik
+1414159171
+:100644 100644 8096179... 2d7feb7... M	realEstateManager/Application.jar
+:100644 100644 9bda731... 2412657... M	realEstateManager/PortfolioTest.txt
+:100644 100644 edb9d7f... 99fc1ac... M	realEstateManager/doc/allclasses-frame.html
+:100644 100644 3c496c5... 850ca6a... M	realEstateManager/doc/allclasses-noframe.html
+:100644 100644 ff1b9e0... 81c8c36... M	realEstateManager/doc/constant-values.html
+:100644 100644 e9e4d27... 6d9b829... M	realEstateManager/doc/deprecated-list.html
+:100644 100644 2fd83f4... 0d0761d... M	realEstateManager/doc/help-doc.html
+:100644 100644 89492db... 213631d... M	realEstateManager/doc/index-files/index-1.html
+:100644 100644 4a7491e... d6af04d... M	realEstateManager/doc/index-files/index-10.html
+:100644 100644 2daadc3... 412ae47... M	realEstateManager/doc/index-files/index-11.html
+:100644 100644 ce7f303... d8f4343... M	realEstateManager/doc/index-files/index-2.html
+:100644 100644 60ede65... 36b8344... M	realEstateManager/doc/index-files/index-3.html
+:100644 100644 b04a8fd... 2d8b52e... M	realEstateManager/doc/index-files/index-4.html
+:100644 100644 a3a8fad... 4129bf6... M	realEstateManager/doc/index-files/index-5.html
+:100644 100644 3571800... 0dd9936... M	realEstateManager/doc/index-files/index-6.html
+:100644 100644 3d35ee7... f3ebd90... M	realEstateManager/doc/index-files/index-7.html
+:100644 100644 aaa4f9a... c2cf3e9... M	realEstateManager/doc/index-files/index-8.html
+:100644 100644 6da8e3c... ff25453... M	realEstateManager/doc/index-files/index-9.html
+:100644 100644 c780e84... cb1e713... M	realEstateManager/doc/index.html
+:100644 100644 a4d872a... d282002... M	realEstateManager/doc/overview-frame.html
+:100644 100644 2fe8a62... 40e8c89... M	realEstateManager/doc/overview-summary.html
+:100644 100644 da784a3... 87eac0c... M	realEstateManager/doc/overview-tree.html
+:100644 100644 ca630bd... 9c0d9ab... M	realEstateManager/doc/realEstateManager/Address.html
+:100644 100644 0b93100... 305f8e1... M	realEstateManager/doc/realEstateManager/Application.html
+:100644 100644 595561b... 8f920e6... M	realEstateManager/doc/realEstateManager/EnergyLevelResidence.html
+:100644 100644 c231f8c... 7756d88... M	realEstateManager/doc/realEstateManager/NegativeException.html
+:100644 100644 ca2c074... 293065e... M	realEstateManager/doc/realEstateManager/Portfolio.html
+:100644 100644 3438304... b17ab6f... M	realEstateManager/doc/realEstateManager/RentalResidence.html
+:100644 100644 fea8f37... 7c57a8a... M	realEstateManager/doc/realEstateManager/ResaleResidence.html
+:100644 100644 39b49a8... 6c65308... M	realEstateManager/doc/realEstateManager/Residence.html
+:100644 100644 6356533... 20df9a3... M	realEstateManager/doc/realEstateManager/class-use/Address.html
+:100644 100644 231e5d9... 61a835b... M	realEstateManager/doc/realEstateManager/class-use/Application.html
+:100644 100644 9003106... 89fe5f2... M	realEstateManager/doc/realEstateManager/class-use/EnergyLevelResidence.html
+:100644 100644 5659954... 5340bfd... M	realEstateManager/doc/realEstateManager/class-use/NegativeException.html
+:100644 100644 6f5b1db... fb062c0... M	realEstateManager/doc/realEstateManager/class-use/Portfolio.html
+:100644 100644 064aeb4... 262dcdf... M	realEstateManager/doc/realEstateManager/class-use/RentalResidence.html
+:100644 100644 0a5a726... 9a742bb... M	realEstateManager/doc/realEstateManager/class-use/ResaleResidence.html
+:100644 100644 8dedaad... d1bcf5c... M	realEstateManager/doc/realEstateManager/class-use/Residence.html
+:100644 100644 5fc2490... 316b830... M	realEstateManager/doc/realEstateManager/package-frame.html
+:100644 100644 b35637d... a0bc5b8... M	realEstateManager/doc/realEstateManager/package-summary.html
+:100644 100644 4e803c8... 88042e0... M	realEstateManager/doc/realEstateManager/package-tree.html
+:100644 100644 1e28b6d... d7dfc4b... M	realEstateManager/doc/realEstateManager/package-use.html
+:100644 100644 e897e3d... b87513c... M	realEstateManager/doc/serialized-form.html
+:100644 100644 56e061f... bf87acd... M	realEstateManager/doc/tests/AddressTest.html
+:100644 100644 8f2c5f1... 0944969... M	realEstateManager/doc/tests/PortfolioTest.html
+:100644 100644 84b0c07... d026a69... M	realEstateManager/doc/tests/RentalResidenceTest.html
+:100644 100644 c577bdf... 39f452b... M	realEstateManager/doc/tests/ResaleResidenceTest.html
+:100644 100644 0de0950... 295859f... M	realEstateManager/doc/tests/ResidenceTest.html
+:100644 100644 1b92b44... b257ccd... M	realEstateManager/doc/tests/class-use/AddressTest.html
+:100644 100644 ca99231... 656d2ff... M	realEstateManager/doc/tests/class-use/PortfolioTest.html
+:100644 100644 c78119b... 7106fc3... M	realEstateManager/doc/tests/class-use/RentalResidenceTest.html
+:100644 100644 4458411... 81323e2... M	realEstateManager/doc/tests/class-use/ResaleResidenceTest.html
+:100644 100644 abe3afa... 3b1aa5e... M	realEstateManager/doc/tests/class-use/ResidenceTest.html
+:100644 100644 493c7e9... 6bbd5d8... M	realEstateManager/doc/tests/package-frame.html
+:100644 100644 ed3b120... d4c5535... M	realEstateManager/doc/tests/package-summary.html
+:100644 100644 17062c3... 77ca061... M	realEstateManager/doc/tests/package-tree.html
+:100644 100644 2c71ce4... 4699b08... M	realEstateManager/doc/tests/package-use.html
+:100644 100644 d5e7c47... 439706e... M	realEstateManager/run.bat
+:100644 100644 d5afe95... a87837d... M	realEstateManager/src/realEstateManager/Application.java
+:100644 100644 eb14601... 9e39e83... M	realEstateManager/src/realEstateManager/Portfolio.java
+:100644 100644 67a3858... 16760b6... M	realEstateManager/src/realEstateManager/ResaleResidence.java
+:100644 100644 7776836... 4caac27... M	realEstateManager/src/realEstateManager/Residence.java
+:100644 100644 efeb981... 7eb34cd... M	realEstateManager/src/tests/PortfolioTest.java
+:000000 100644 0000000... 892f1dd... A	realEstateManager/writePortfolioTest.txt
+
+user:Joshua Slik
+1414272792
+:000000 100644 0000000... 122387c... A	.travis.yml
+:100644 100644 e9e8dd1... 7878d55... M	gource/gource-config.gourcefile.ini
+
+user:Joshua Slik
+1414273302

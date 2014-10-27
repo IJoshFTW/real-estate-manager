@@ -53,5 +53,16 @@ public class ResaleResidence extends Residence implements EnergyLevelResidence {
 	public String getEnergyLevel() {
 		return energyLevel;
 	}
+	
+	public int getEnergyLevelAsInt() {
+		switch(energyLevel) {
+		case "A": return 1;
+		case "B": return 2;
+		case "C": return 3;
+		case "D": return 4;
+		case "E": return 5;
+		default : return 0;
+		}
+	}
 
 }

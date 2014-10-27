@@ -136,9 +136,12 @@ public class Application {
 		}
 		
 		// Enter energy level
-		System.out.println("Please enter an energy level.");
+		System.out.println("Please enter an energy level. Something between A and E.");
 		energyLevel = readLine();
 		if(energyLevel.length() == 0) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		} else if(energyLevel != "A" && energyLevel != "B" && energyLevel != "C" && energyLevel != "D" && energyLevel != "E" ) {
 			System.out.println("Invalid input, returning to main menu\n");
 			return;
 		}
@@ -219,7 +222,7 @@ public class Application {
 	 * Method for receiving resale residences from the {@link Portfolio} <b>port</b> depending on a user selected filter
 	 */
 	public static void readResale() {
-		String inputstr;
+		String inputstr, energyLevel;
 		ArrayList<Residence> rsdlist;
 		int price, status;
 		System.out.println("You are about to view resale residences.\n");
@@ -236,9 +239,16 @@ public class Application {
 		System.out.println("Enter a maximum price for the residences. 0 will skip this step.");
 		price = Integer.parseInt(readLine());
 		
+		System.out.println("Input energy level to check against. It will display residences of your energy level and better.");
+		energyLevel = readLine();
+		if(energyLevel != "A" && energyLevel != "B" && energyLevel != "C" && energyLevel != "D" && energyLevel != "E" ) {
+			System.out.println("Invalid input, returning to main menu\n");
+			return;
+		}
+		
 		Portfolio resaleport = port.copyAllResidences(1);
 		try {
-			rsdlist = resaleport.residencesUpto(price, status);
+			rsdlist = resaleport.residencesUpto(price, status, energyLevel);
 		}
 		catch (NegativeException e) {
 			System.out.println("Invalid input, returning to main menu\n");

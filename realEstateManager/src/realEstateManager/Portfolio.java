@@ -106,7 +106,7 @@ public class Portfolio {
 	
 	/**
 	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount and of a certain type
-	 * @param price Price to check against
+	 * @param price Price to check against - 0 for all
 	 * @param status Status to check against
 	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
 	 * @throws NegativeException throws if the given <b>price</b> is negative
@@ -117,6 +117,34 @@ public class Portfolio {
 			for(int i = 0; i < this.residences.size(); i++) {
 				if(this.residences.get(i).maxCost(price) == true)
 					if(this.residences.get(i).getStatus() == status)
+						residences.add(this.residences.get(i));
+			}
+		} else if(price == 0) {
+			for(int i = 0; i < this.residences.size(); i++) {
+				if(this.residences.get(i).getStatus() == status)
+					residences.add(this.residences.get(i));
+			}
+		} else {
+			throw new NegativeException("Nice try.");
+		}
+		return residences;
+	}
+	
+	/**
+	 * Get the {@link Residence} Objects which prices are below or equal to a certain amount and of a certain type
+	 * @param price Price to check against - 0 for all
+	 * @param status Status to check against
+	 * @param energyLevel Energy level to check against
+	 * @return {@link ArrayList} with all <b>Residence</b> Objects in this {@link Portfolio} with a price less than <i>price</i>
+	 * @throws NegativeException throws if the given <b>price</b> is negative
+	 */
+	public ArrayList<Residence> residencesUpto(int price, int status, String energyLevel) throws NegativeException {
+		ArrayList<Residence> residences = new ArrayList<Residence>();
+		if(price > 0) {
+			for(int i = 0; i < this.residences.size(); i++) {
+				if(this.residences.get(i).maxCost(price) == true)
+					if(this.residences.get(i).getStatus() == status)
+						
 						residences.add(this.residences.get(i));
 			}
 		} else if(price == 0) {
